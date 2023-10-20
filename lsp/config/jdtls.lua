@@ -7,7 +7,11 @@ return function()
   -- calculate workspace dir
   local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
   local workspace_dir = vim.fn.stdpath "data" .. "/site/java/workspace-root/" .. project_name
-  os.execute("mkdir " .. workspace_dir)
+
+  if vim.loop.fs_stat(workspace_dir) == nil then
+    -- only mkdir when workspace not found
+    os.execute("mkdir " .. workspace_dir)
+  end
 
   -- get the mason install path
   local install_path = require("mason-registry").get_package("jdtls"):get_install_path()
