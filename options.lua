@@ -1,37 +1,34 @@
--- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
-    relativenumber = true, -- sets vim.opt.relativenumber
-    number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
-    conceallevel = 2,
-    list = true,
-    showtabline = 2, -- always show tabline
-    listchars = { tab = "│→", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣" },
-    showbreak = "↪ ",
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = true, -- sets vim.opt.wrap
+    relativenumber = true, -- Show line numbers relative to the current line
+    number = true, -- Show regular line numbers
+    spell = false, -- Disable spell-check
+    conceallevel = 2, -- Conceal text (syntax hiding) at level 2
+    list = true, -- Show special characters (e.g., tabs)
+    showtabline = 2, -- Show tabs in the tabline
+    listchars = {
+      tab = "│→", -- Custom characters for tabs
+      extends = "⟩", -- Custom character for line extending beyond the screen
+      precedes = "⟨", -- Custom character for line preceding the screen
+      trail = "·", -- Custom character for trailing whitespace
+      nbsp = "␣", -- Custom character for non-breaking space
+    },
+    showbreak = "↪ ", -- Custom text for line breaks
+    signcolumn = "auto", -- Automatically show the sign column
+    wrap = true, -- Enable text wrapping
+    mouse = "", -- Mouse interaction (empty for default behavior)
   },
   g = {
-    mapleader = " ", -- sets vim.g.mapleader
-    autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
-    cmp_enabled = true, -- enable completion at start
-    autopairs_enabled = true, -- enable autopairs at start
-    diagnostics_mode = 3, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
-    icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
-    ui_notifications_enabled = true, -- disable notifications when toggling UI elements
-    resession_enabled = true, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
+    mapleader = " ", -- Define the leader key for key mappings
+    autoformat_enabled = true, -- Enable autoformatting
+    cmp_enabled = true, -- Enable the completion plugin
+    autopairs_enabled = true, -- Enable auto-pairing of brackets and quotes
+    diagnostics_mode = 3, -- Set the diagnostics mode to 3
+    icons_enabled = true, -- Enable icons (e.g., for file types)
+    ui_notifications_enabled = true, -- Enable UI notifications
+    resession_enabled = true, -- Enable session management
   },
   o = {
-    guifont = "JetBrains Mono:h6",
+    guifont = "jetbrains mono:h6", -- Set the GUI font to "jetbrains mono" with size 6
   },
 }
--- If you need more control, you can use the function()...end notation
--- return function(local_vim)
---   local_vim.opt.relativenumber = true
---   local_vim.g.mapleader = " "
---   local_vim.opt.whichwrap = vim.opt.whichwrap - { 'b', 's' } -- removing option from list
---   local_vim.opt.shortmess = vim.opt.shortmess + { I = true } -- add to option list
---
---   return local_vim
--- end
