@@ -31,4 +31,8 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.java" },
 
+  -- Miscellaneous
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.bash" },
+
 }
