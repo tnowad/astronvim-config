@@ -8,4 +8,6 @@ return {
   -- Media
   { import = "astrocommunity.media.vim-wakatime" },
 
+  -- Editing Support
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
 }
