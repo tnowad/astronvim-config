@@ -1,2 +1,3 @@
 -- Set colorscheme to use
-return "material"
+-- return "material"
+return "catppuccin"
