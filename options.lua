@@ -17,6 +17,7 @@ return {
     signcolumn = "auto", -- Automatically show the sign column
     wrap = true, -- Enable text wrapping
     mouse = "", -- Mouse interaction (empty for default behavior)
+    swapfile = false,
   },
   g = {
     mapleader = " ", -- Define the leader key for key mappings
