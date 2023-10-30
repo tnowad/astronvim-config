@@ -18,4 +18,10 @@ return {
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.pack.vue" },
 
+  -- Configuration Languages
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.toml" },
+
 }
