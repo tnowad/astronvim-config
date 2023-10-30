@@ -5,4 +5,7 @@ return {
   -- Colorschemes
   { import = "astrocommunity.colorscheme.catppuccin" },
 
+  -- Media
+  { import = "astrocommunity.media.vim-wakatime" },
+
 }
