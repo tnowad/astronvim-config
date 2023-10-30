@@ -35,4 +35,8 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.bash" },
 
+  -- Workflow and Completion
+  { import = "astrocommunity.completion.codeium-vim" },
+  { import = "astrocommunity.workflow.bad-practices-nvim" },
+  { import = "astrocommunity.workflow.hardtime-nvim" },
 }
