@@ -1,9 +1,6 @@
 return {
   "AstroNvim/astrocommunity",
 
-  -- Media
-  -- { import = "astrocommunity.media.vim-wakatime" },
-
   -- Editing Support
   -- { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
