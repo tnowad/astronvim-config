@@ -1,9 +1,6 @@
 return {
   "AstroNvim/astrocommunity",
 
-  -- Editing Support
-  -- { import = "astrocommunity.editing-support.todo-comments-nvim" },
-
   -- Frontend & NodeJS
   -- { import = "astrocommunity.pack.typescript-all-in-one" },
   -- { import = "astrocommunity.pack.tailwindcss" },
