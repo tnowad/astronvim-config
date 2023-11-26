@@ -26,6 +26,5 @@ return {
   -- { import = "astrocommunity.pack.bash" },
 
   -- -- Workflow and Completion
-  -- { import = "astrocommunity.workflow.bad-practices-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }
