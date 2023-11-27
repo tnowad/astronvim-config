@@ -2,7 +2,7 @@ return {
   "AstroNvim/astrocommunity",
 
   -- Frontend & NodeJS
-  -- { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.typescript" },
   -- { import = "astrocommunity.pack.tailwindcss" },
   -- { import = "astrocommunity.pack.html-css" },
   -- { import = "astrocommunity.pack.prisma" },
