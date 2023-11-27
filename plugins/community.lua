@@ -24,7 +24,4 @@ return {
   -- Miscellaneous
   -- { import = "astrocommunity.pack.docker" },
   -- { import = "astrocommunity.pack.bash" },
-
-  -- -- Workflow and Completion
-  -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }
