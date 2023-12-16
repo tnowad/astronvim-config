@@ -32,6 +32,10 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["C-h"] = {"<cmd> TmuxNavigateLeft<CR>", desc = "Tmux Navigate Left"},
+    ["C-j"] = {"<cmd> TmuxNavigateDown<CR>", desc = "Tmux Navigate Down"},
+    ["C-k"] = {"<cmd> TmuxNavigateUp<CR>", desc = "Tmux Navigate Up"},
+    ["C-l"] = {"<cmd> TmuxNavigateRight<CR>", desc = "Tmux Navigate Right"}
   },
   t = {
     -- setting a mapping to false will disable it
